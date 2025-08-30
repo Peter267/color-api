@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.go",
-      "use": "@vercel/go" 
+      "src": "api/index.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/api/color",
-      "dest": "/api/index.go"
+      "dest": "/api/index.py"
     }
   ]
 }
