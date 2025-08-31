@@ -51,6 +51,15 @@ curl "[YOUR_DEPLOYED_URL]/api/color?url=https://www.google.com/images/branding/g
 }
 ```
 
+## ⚠️ 跨域（CORS）策略
+
+请注意，为了安全起见，本 API 默认配置了严格的跨域资源共享（CORS）策略。
+
+在 `vercel.json` 文件中，`Access-Control-Allow-Origin` 被设置为一个特定的域名（`https://peter267.github.io`）。
+
+这意味着只有来自该域名的前端页面发起的请求才会被浏览器允许。来自任何其他网站（包括本地的 localhost）的调用都将被浏览器阻止并报告CORS错误。
+
+**如果您 Fork 本项目并自行部署**，您必须修改 `vercel.json` 文件，将 `Access-Control-Allow-Origin` 的值更改为您自己的前端网站域名，否则 API 将无法在您的网站上正常工作。
 
 ## 🛠️ 技术栈
 
