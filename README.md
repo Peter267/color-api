@@ -144,6 +144,11 @@ colorgram.py
 
   - API调用频率请参考Vercel的无服务器函数限制
 
+## ❗ 体验地址说明
+`https://color.api.peter267.dpdns.org` 为体验地址，仅供测试与功能演示。您可以直接通过浏览器访问，或使用 `curl` 命令进行体验。
+
+若需在实际生产或个人网站中集成使用，请您自行部署服务。
+
 ## 🤝 贡献
 欢迎提交 Issue 和 Pull Request 来改进这个项目。
 
