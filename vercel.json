@@ -8,17 +8,14 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
+      "src": "/api/color",
+      "dest": "/api/index.py",
       "headers": {
         "Access-Control-Allow-Credentials": "true",
         "Access-Control-Allow-Origin": "https://peter267.github.io",
         "Access-Control-Allow-Methods": "GET,OPTIONS",
         "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
       }
-    },
-    {
-      "src": "/api/color",
-      "dest": "/api/index.py"
     }
   ]
 }
